@@ -1,0 +1,371 @@
+/* ---------- Global Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Navbar ---------- */
+header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar h1 {
+  color: #0077b6;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #0077b6;
+}
+
+/* ---------- Hero / Section ---------- */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  color: #0f172a;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+/* ---------- Containers ---------- */
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #fff;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+/* ===== BLOG PAGE STYLING ===== */
+.blog-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #3a7bd5, #3a6073);
+  color: white;
+}
+
+.blog-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.blog-posts {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.blog-posts .post {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.blog-posts h2 {
+  color: #3a6073;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.blog-posts .date {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.blog-posts p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ===== CONTACT PAGE STYLING ===== */
+.contact-hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(to right, #4a90e2, #145374);
+  color: white;
+}
+
+.contact-hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.contact-info {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.contact-info h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #145374;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+.contact-form {
+  background: #f1f7ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  color: #145374;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.4);
+  outline: none;
+}
+
+.btn {
+  background-color: #145374;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a90e2;
+}
+
+.closing-message {
+  text-align: center;
+  padding: 40px 20px;
+  font-style: italic;
+  color: #333;
+  background: #fafafa;
+}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width: 768px) {
+  .blog-hero h1, .contact-hero h1 {
+    font-size: 2rem;
+  }
+
+  .blog-posts .post, .info-item {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+/* Contact Page Styling */
+.contact-section {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #0078ff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005fcc;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0078ff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #005fcc;
+  transform: scale(1.05);
+}
+
+.social-links i {
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-links a {
+    width: 90%;
+    justify-content: center;
+    font-size: 13px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}
