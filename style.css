@@ -5,13 +5,14 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-body {
+.content-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
   background: #f8fafc;
   color: #333;
   line-height: 1.6;
 }
-
 /* ---------- Navbar ---------- */
 header {
   background: #fff;
@@ -372,3 +373,4 @@ input:focus, textarea:focus {
     font-size: 14px;
   }
 }
+
